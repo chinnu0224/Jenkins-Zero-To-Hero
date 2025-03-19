@@ -61,11 +61,12 @@ sudo apt update && sudo apt install unzip -y
 adduser sonarqube
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.4.1.88267.zip
 unzip *
-chown -R sonarqube:sonarqube /opt/sonarqube
-chmod -R 775 /opt/sonarqube
+chown -R sonarqube:sonarqube /sonarqube-10.4.1.88267
+chmod -R 775 /sonarqube-10.4.1.88267
+make sure the sonarqube file path is correct
 chnage user to sonarqube
 sudo su - sonarqube
-cd /opt/sonarqube/bin/linux-x86-64
+cd /sonarqube-10.4.1.88267/bin/linux-x86-64
 ./sonar.sh start
 ```
 
